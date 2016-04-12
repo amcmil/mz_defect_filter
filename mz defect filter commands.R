@@ -55,5 +55,5 @@ write.table(filtered,"feature_list_mz_defect_filtered.txt",sep="\t",col.names=NA
 pdf("mz defect plot before and after filter.pdf", height=6.5,width=5)  
 par(mfrow=c(2,1),mai=c(0.9,0.9,0.4,0.5))
 plot(mydata$"mz",mydata$"md",cex.axis=0.8,col=adjustcolor("black",alpha=0.3),pch=20,cex=0.8,ylim=c(0,1),xlim=c(50,750),ylab="md",xlab="m/z",main="Raw",cex.lab=0.8,cex.main=0.8)
-plot(keep$"mz",keep$"md",cex.axis=0.8,col=adjustcolor("black",alpha=0.3),pch=20,cex=0.8,ylim=c(0,1),xlim=c(50,750),ylab="md",xlab="m/z",main="Filtered",cex.lab=0.8,cex.main=0.8)
+plot(filtered$"mz",filtered$"md",cex.axis=0.8,col=adjustcolor("black",alpha=0.3),pch=20,cex=0.8,ylim=c(0,1),xlim=c(50,750),ylab="md",xlab="m/z",main="Filtered",cex.lab=0.8,cex.main=0.8)
 dev.off()
