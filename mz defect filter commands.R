@@ -1,7 +1,7 @@
 #m/z defect filtering commands
 #12-04-2016
 
-#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------
 #The following chunck of code will remove features in your LC-MS data identified as salt clusters based on m/z defect, retention time and an inclusion list derived from the human metabolome database (included in this package).
 #your feature table must have LC-MS features in rows, m/z in column 1 (labelled "mz"), followed by retention time in column 2 (labelled "rt").
 #-------------------------------------------------------------------------------- 
