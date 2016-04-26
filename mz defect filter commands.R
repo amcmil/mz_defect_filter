@@ -7,7 +7,7 @@
 #-------------------------------------------------------------------------------- 
 
 #read in feature table you want to filter
-mydata<-read.table("example_data.txt",  header=T, check.names=F, row.names=1, sep="\t")
+mydata<-read.table("example_data_pos.txt",  header=T, check.names=F, row.names=1, sep="\t")
 
 #set rt threshold
 rt=0.8
@@ -35,7 +35,7 @@ return(y)
 fit<-as.data.frame(t(apply(mydata,1,f)))
 
 #read in hmdb inclusion list
-hmdb<-read.table("hmdb_inclusions_list.txt",  header=T, check.names=F, row.names=1, sep="\t")
+hmdb<-read.table("hmdb_inclusions_list_pos.txt",  header=T, check.names=F, row.names=1, sep="\t")
 
 #find masses in inclusion list in mydata 
 in_list<-hmdb[which(hmdb$"inclusion"=="y"),]
